@@ -8,12 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">@color/white</color>
-    <color name="colorPrimaryDark">@color/white</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#AED581</color>
 
-    <color name="textColorPrimary">#212121</color>
-    <color name="textColorSecondary">#616161</color>
+    <color name="textColorPrimary">#F5F5F5</color>
+    <color name="textColorSecondary">#BDBDBD</color>
 
-    <color name="colorBackground">@color/white</color>
+    <color name="colorBackground">#212121</color>
 </resources>
