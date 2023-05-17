@@ -1,4 +1,4 @@
-package com.example.myapplication.ui;
+package com.example.myapplication;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private String TAG = "MainActivity";
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
+    private NetworkThread networkThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        networkThread = new NetworkThread();
+        networkThread.start();
 
         setSupportActionBar(binding.toolbar);
         ActionBar ab = getSupportActionBar();

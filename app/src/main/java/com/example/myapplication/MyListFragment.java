@@ -24,9 +24,9 @@ public class MyListFragment extends ListFragment {
         adaptor = new ListViewAdaptor();
         setListAdapter(adaptor);
 
-        adaptor.addItem(new ListItem(ContextCompat.getDrawable(getActivity(), R.drawable.ic_launcher_background), "버스정류장1", "1111"));
-        adaptor.addItem(new ListItem(ContextCompat.getDrawable(getActivity(), R.drawable.ic_launcher_foreground), "버스정류장2", "2222"));
-        adaptor.addItem(new ListItem(ContextCompat.getDrawable(getActivity(), R.drawable.ic_launcher_background), "버스정류장3", "3333"));
+        addItem(new ListItem(ContextCompat.getDrawable(getActivity(), R.drawable.ic_launcher_background), "버스정류장1", "1111"));
+        addItem(new ListItem(ContextCompat.getDrawable(getActivity(), R.drawable.ic_launcher_foreground), "버스정류장2", "2222"));
+        addItem(new ListItem(ContextCompat.getDrawable(getActivity(), R.drawable.ic_launcher_background), "버스정류장3", "3333"));
 
         return super.onCreateView(inflater, container, savedInstanceState);
     }

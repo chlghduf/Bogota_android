@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ListViewAdaptor extends BaseAdapter {
-   private ArrayList<ListItem> listViewItemList = new ArrayList<>();
+   private ArrayList<ListItem> listViewItemList = new ArrayList<ListItem>();
 
    //ListViewAdaptor 생성자
    public ListViewAdaptor() {

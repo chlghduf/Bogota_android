@@ -21,17 +21,17 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_favorite"
-        android:name="com.example.myapplication.SecondFragment"
+        android:name="com.example.myapplication.FavoriteFragment"
         android:label="@string/title_favorite"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_favorite">
 
 
     </fragment>
     <fragment
         android:id="@+id/navigation_more"
-        android:name="com.example.myapplication.SecondFragment"
-        android:label="@string/title_favorite"
-        tools:layout="@layout/fragment_second">
+        android:name="com.example.myapplication.MoreFragment"
+        android:label="@string/title_more"
+        tools:layout="@layout/fragment_more">
 
 
     </fragment>

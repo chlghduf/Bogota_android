@@ -13,6 +13,8 @@ import androidx.appcompat.widget.AppCompatEditText;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 
+import com.example.myapplication.R;
+
 // 툴바에 사용될 검색창 구현을 위해 EditText 를 커스텀
 public class CustomHYEditText extends AppCompatEditText implements View.OnTouchListener, View.OnFocusChangeListener{
 
@@ -47,7 +49,7 @@ public class CustomHYEditText extends AppCompatEditText implements View.OnTouchL
 
    private void init() {
       Log.d("custom", "init()");
-      Drawable tempDrawable = ContextCompat.getDrawable(getContext(),R.drawable.ic_cancel);
+      Drawable tempDrawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_cancel);
       cancelDrawable = DrawableCompat.wrap(tempDrawable);
       //색 지정
       DrawableCompat.setTintList(cancelDrawable,getHintTextColors());

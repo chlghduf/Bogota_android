@@ -7,13 +7,11 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.myapplication.databinding.FragmentSecondBinding;
+import com.example.myapplication.databinding.FragmentFavoriteBinding;
+public class FavoriteFragment extends Fragment {
 
-public class SecondFragment extends Fragment {
-
-    private FragmentSecondBinding binding;
+    private FragmentFavoriteBinding binding;
 
     @Override
     public View onCreateView(
@@ -21,7 +19,7 @@ public class SecondFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentSecondBinding.inflate(inflater, container, false);
+        binding = FragmentFavoriteBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
